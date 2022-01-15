@@ -8,17 +8,15 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Login Page")),
-      body: Container(
-        child: Column(
-          children: [
-            emailField(),
-            passwordField(),
-            Container(
-              margin: const EdgeInsets.only(top: 25.0),
-            ),
-            submitButton(),
-          ],
-        ),
+      body: Column(
+        children: [
+          emailField(),
+          passwordField(),
+          Container(
+            margin: const EdgeInsets.only(top: 25.0),
+          ),
+          submitButton(),
+        ],
       ),
     );
   }
